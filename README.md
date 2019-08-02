@@ -1,44 +1,4 @@
 # Clima
-Learn to make iOS Apps with [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.0/Xcode 9) - Clima App
+Aplicacion creada a partir de curso de iOS de Udemy "iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp" dictado por la instructura Angela Yu
 
-Beginner: Download the starter project files as .zip and extract the files to your desktop.
-
-Pro: Git clone to your Xcode projects folder.
-
-## Finished App
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/Clima.gif)
-
-## Fix for Cocoapods v1.0.1 and below
-
-```ruby
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-      config.build_settings['MACOSX_DEPLOYMENT_TARGET'] = '10.10'
-    end
-  end
-end
-```
-
-## Fix for App Transport Security Override
-
-```XML
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>openweathermap.org</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
-```
-
-
-Copyright © The App Brewery
-
+En esta aplicacion se intenta de forzar los conocimientos en lo que es la integracion de API Restful, como tambien la utilizacion de Cocoapods mas especificamente en la incorporacion de Alamofire y SwifyJSON, y por ultimo tambien se utliza el CoreLocation para utlizar el sensor del GPS para saber la ubicacion de nuestro dispositivo.
